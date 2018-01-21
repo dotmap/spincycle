@@ -1,0 +1,9 @@
+{
+  "name": "spincycle",
+  "version": "1.0.0",
+  "description": "The code behind a device that allows you to track time with ease",
+  "main": "index.js",
+  "repository": "git@github.com:multi-cell/spincycle",
+  "author": "Graham Barber <grahammbarber@gmail.com>",
+  "license": "MIT"
+}
