@@ -7,7 +7,8 @@ const devtools = require('hyperapp-redux-devtools')
 const state = {
   user: '',
   name: '',
-  issues: []
+  issues: [],
+  activeIssue: null
 }
 
 const actions = {
@@ -25,7 +26,8 @@ const actions = {
     else if (current + direction < 0) issues[issues.length - 1].active = true
     else issues[current + direction].active = true
     return { issues }
-  }
+  },
+  selectIssue: ({number}) => ({ activeIssue: number })
 }
 
 const view = (state, actions) => main([
@@ -49,7 +51,9 @@ const view = (state, actions) => main([
   ]),
   div([
     ul([
-      state.issues.map(({number, title, active}) => (li({class: active ? 'active' : ''}, `${number}: ${title}`)))
+      state.issues.map(({number, title, active}) => {
+        return li({class: active ? 'active' : '', onclick: ({target}) => active ? actions.selectIssue({number}) : null}, `${number}: ${title}`)
+      })
     ])
   ])
 ])
