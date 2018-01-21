@@ -1,0 +1,22 @@
+{
+  "name": "spincycle-selector",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-rebuild"
+  },
+  "dependencies": {
+    "@hyperapp/html": "^0.5.1",
+    "bluetooth-serial-port": "^2.1.5",
+    "electron-devtools-installer": "^2.2.0",
+    "hyperapp": "^1.0.1",
+    "hyperapp-redux-devtools": "^1.1.2"
+  },
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-rebuild": "^1.7.3",
+    "livereload": "^0.6.2",
+    "xo": "^0.18.2"
+  }
+}
