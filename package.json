@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@hyperapp/html": "^1.0.1",
+    "axios": "^0.17.1",
     "electron-devtools-installer": "^2.2.3",
     "hyperapp": "^1.0.2",
     "hyperapp-redux-devtools": "^1.1.3"
