@@ -2,8 +2,9 @@
   "name": "spincycle",
   "version": "1.0.0",
   "description": "The code behind a device that allows you to track time with ease",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -16,6 +17,7 @@
   "author": "Graham Barber <grahammbarber@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "electron": "^1.7.10",
     "eslint": "^4.16.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
@@ -23,6 +25,13 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
-    "lint-staged": "^6.0.1"
+    "lint-staged": "^6.0.1",
+    "livereload": "^0.6.3"
+  },
+  "dependencies": {
+    "@hyperapp/html": "^1.0.1",
+    "electron-devtools-installer": "^2.2.3",
+    "hyperapp": "^1.0.2",
+    "hyperapp-redux-devtools": "^1.1.3"
   }
 }
