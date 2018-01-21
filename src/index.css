@@ -3,7 +3,7 @@ html {
     font-family: sans-serif;
     background: white;
   }
-  
+
   body,
   body * {
     display: block;
@@ -13,7 +13,7 @@ html {
     padding: 0;
     /* outline: 0; */
   }
-  
+
   body,
   noscript {
     /* height: 100vh; */
@@ -21,31 +21,34 @@ html {
     align-items: center;
     justify-content: center;
   }
-  
+
   div {
     display: flex;
     > * + * {
       margin-left: 0.38rem;
     }
   }
-  
+
   noscript {
     width: 100vw;
     align-items: center;
     justify-content: center;
     font-weight: bold;
   }
-  
+
   button {
     padding: 0.62rem 1rem;
     font-size: 0.62rem;
     border: 1px solid #000;
     font-weight: bold;
-    cursor: pointer;
     touch-action: manipulation;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:disabled {
+      border-color: #888;
+      color: #888;
+    }
   }
-  
+
   input {
     margin: 1rem auto;
   }
